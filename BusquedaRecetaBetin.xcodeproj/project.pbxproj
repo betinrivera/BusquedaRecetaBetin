@@ -14,6 +14,9 @@
 		3D2D887C228258990027E697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D887A228258990027E697 /* LaunchScreen.storyboard */; };
 		3D2D8887228258990027E697 /* BusquedaRecetaBetinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D8886228258990027E697 /* BusquedaRecetaBetinTests.swift */; };
 		3D2D8892228258990027E697 /* BusquedaRecetaBetinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D8891228258990027E697 /* BusquedaRecetaBetinUITests.swift */; };
+		3DB318D6228261F600166059 /* CeldaBusqueda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB318D5228261F600166059 /* CeldaBusqueda.swift */; };
+		3DB318D82282630C00166059 /* RecetaBusqueda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB318D72282630C00166059 /* RecetaBusqueda.swift */; };
+		3DB318DA228264DA00166059 /* DatosBusqueda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB318D9228264DA00166059 /* DatosBusqueda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3D2D888D228258990027E697 /* BusquedaRecetaBetinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusquedaRecetaBetinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2D8891228258990027E697 /* BusquedaRecetaBetinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusquedaRecetaBetinUITests.swift; sourceTree = "<group>"; };
 		3D2D8893228258990027E697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB318D5228261F600166059 /* CeldaBusqueda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaBusqueda.swift; sourceTree = "<group>"; };
+		3DB318D72282630C00166059 /* RecetaBusqueda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaBusqueda.swift; sourceTree = "<group>"; };
+		3DB318D9228264DA00166059 /* DatosBusqueda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosBusqueda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,10 @@
 		3D2D88702282588F0027E697 /* BusquedaRecetaBetin */ = {
 			isa = PBXGroup;
 			children = (
-				3D2D88712282588F0027E697 /* AppDelegate.swift */,
-				3D2D88732282588F0027E697 /* ViewController.swift */,
-				3D2D88752282588F0027E697 /* Main.storyboard */,
-				3D2D8878228258990027E697 /* Assets.xcassets */,
-				3D2D887A228258990027E697 /* LaunchScreen.storyboard */,
-				3D2D887D228258990027E697 /* Info.plist */,
+				3DB318D32282614300166059 /* app */,
+				3DB318D22282613200166059 /* models */,
+				3DB318D12282611C00166059 /* views */,
+				3D2D889F22825D190027E697 /* viewControllers */,
 			);
 			path = BusquedaRecetaBetin;
 			sourceTree = "<group>";
@@ -123,6 +127,43 @@
 				3D2D8893228258990027E697 /* Info.plist */,
 			);
 			path = BusquedaRecetaBetinUITests;
+			sourceTree = "<group>";
+		};
+		3D2D889F22825D190027E697 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D88732282588F0027E697 /* ViewController.swift */,
+				3DB318D5228261F600166059 /* CeldaBusqueda.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		3DB318D12282611C00166059 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D887A228258990027E697 /* LaunchScreen.storyboard */,
+				3D2D88752282588F0027E697 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3DB318D22282613200166059 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3DB318D72282630C00166059 /* RecetaBusqueda.swift */,
+				3DB318D9228264DA00166059 /* DatosBusqueda.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3DB318D32282614300166059 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				3D2D8878228258990027E697 /* Assets.xcassets */,
+				3D2D88712282588F0027E697 /* AppDelegate.swift */,
+				3D2D887D228258990027E697 /* Info.plist */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2D88742282588F0027E697 /* ViewController.swift in Sources */,
+				3DB318D82282630C00166059 /* RecetaBusqueda.swift in Sources */,
+				3DB318DA228264DA00166059 /* DatosBusqueda.swift in Sources */,
+				3DB318D6228261F600166059 /* CeldaBusqueda.swift in Sources */,
 				3D2D88722282588F0027E697 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
